@@ -27,7 +27,7 @@ export class Rsvp {
       come: this.come,
       guests: this.guests
     })
-  if(this.name == '' || this.surname == '' || this.come == ''){
+  if(this.name == '' || this.surname == '' || this.come == '' ){
     alert('Խնդրում ենք լրացնել բոլոր դաշտերը!')
     return
   }
