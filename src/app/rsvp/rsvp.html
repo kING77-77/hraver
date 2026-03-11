@@ -1,0 +1,42 @@
+<section class="rsvp">
+
+<h2>Подтвердите участие</h2>
+
+<form (submit)="send($event)">
+
+<label>
+<input type="radio" name="come" value="yes" [(ngModel)]="come">
+Կարող եմ գալ
+</label>
+
+<label>
+<input type="radio" name="come" value="no" [(ngModel)]="come">
+Չեմ կարող գալ
+</label>
+
+<input
+type="number"
+placeholder="Հյուրերի քանակ"
+[(ngModel)]="guests"
+name="guests"
+/>
+
+<input
+type="text"
+placeholder="Անուն"
+[(ngModel)]="name"
+name="name"
+/>
+
+<input
+type="text"
+placeholder="Ազգանուն"
+[(ngModel)]="surname"
+name="surname"
+/>
+
+<button>Ուղարկել</button>
+
+</form>
+
+</section>
